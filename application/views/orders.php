@@ -9,20 +9,18 @@
 <?php echo validation_errors(); ?>
 <?php echo form_open('Order/Order_Taking') ?>
 
-<div class="form-row">
+<div class="form-inline">
   
    
  
   <div class="form-group">
     <label >Order No</label>
     <input type="text" class="form-control" id="Order_No" placeholder="Order No" name="order_no">
-  </div>
-  <div class="form-group">
+  
     <label for="inputAddress2">Order Name</label>
     <input type="text" class="form-control" id="Order_Name" placeholder="Order Name" name="order_name">
-  </div>
-  <div class="form-row">
-    <div class="form-group col-md-6">
+  
+   
       <label for="inputCity">Order Date</label>
       <input type="date" class="form-control" id="inputDate" name="order_date">
     </div>
