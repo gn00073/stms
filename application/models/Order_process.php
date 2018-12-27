@@ -13,7 +13,17 @@ class Order_process extends CI_Model{
                                 return $this->db->insert('orders',$data);
                             }
 
-
+                            function getNextOrderNo(){
+                                $maxid = 0;
+                                $row = $this->db->query('SELECT MAX(order_no) AS `order_no` FROM `orders`')->row();
+                                if ($row) {
+                                    $maxid = $row->maxid; 
+                                }
+                                $NextOrderID = $maxid+1;
+                                return $NextOrderID;
+                                
+                
+                            }
 
 
     

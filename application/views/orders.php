@@ -11,8 +11,8 @@
 
 <div class="form-inline">
  <?php 
- 
-echo getNextOrderNo();
+
+echo getNextOrder_ID();
  
 ?>
 
