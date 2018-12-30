@@ -41,8 +41,8 @@ Class Order extends CI_Controller{
 
                     $this->load->model('Order_process');
                     $NextOrder_ID= $this->Order_process->getNextOrderNo();
-                
-                
+                $data['NextOrderID']=$NextOrder_ID;
+                $this->Load->View('orders',$data);
                 
                 }
 
