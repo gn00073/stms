@@ -1,6 +1,6 @@
 <?php include 'partials/header.php'; ?>
 
-
+<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/main_style.css"> 
 
 
 <div class="container">
