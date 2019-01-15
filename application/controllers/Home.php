@@ -37,4 +37,9 @@ class Home extends CI_Controller {
 	{
 		$this->load->view('Orders');
 	}
+
+	public function Jobs()
+	{
+		$this->load->view('Jobs');
+	}
 }
