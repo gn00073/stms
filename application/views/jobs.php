@@ -24,8 +24,8 @@
     <input type="text" class="form-control" id="job_description" placeholder="Job Description" name="job_description">
   </div>
     <div class="form-group">
-      <label for="inputDate">Order Date</label>
-      <input type="date" class="form-control" id="inputDate" name="order_date">
+      <label for="inputDate"> QTY</label>
+      <input type="text" class="form-control" id="qty" name="qty">
 
       <label for="inputCity">Requested Date</label>
       <input type="date" class="form-control" id="inputDate" name="requested_date">
