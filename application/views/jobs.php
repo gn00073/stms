@@ -8,7 +8,7 @@
 <hr>
 
 <?php echo validation_errors(); ?>
-<?php echo form_open('c_Jobs/Jobs_Adding') ?>
+<?php echo form_open('jobs/Jobs_Adding') ?>
 
 <div class="form-horizontal">
  <?php 
@@ -24,14 +24,16 @@
     <input type="text" class="form-control" id="job_description" placeholder="Job Description" name="job_description">
   </div>
     <div class="form-group">
-      <label for="inputDate"> QTY</label>
+      <label for="inpu-QTY"> QTY</label>
       <input type="text" class="form-control" id="qty" name="qty">
 
-      <label for="inputCity">Requested Date</label>
-      <input type="date" class="form-control" id="inputDate" name="requested_date">
+      <label for="Unit Price">Unit Price</label>
+      <input type="text" class="form-control" id="unit_price" name="unit_price">
+      <label for="Price">Price</label>
+      <input type="text" class="form-control" id="price" name="price">
   </div>
   <div class="form-group">
-      <button type="submit" class="btn btn-primary">Create Order</button>
+      <button type="submit" class="btn btn-primary">Add Jobs</button>
   </div>
     
   </div>

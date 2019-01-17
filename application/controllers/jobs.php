@@ -1,6 +1,6 @@
 <?php
 
-Class c_Jobs extends CI_Controller{
+Class Jobs extends CI_Controller{
 
                 public function Jobs_Adding(){
 
@@ -19,8 +19,8 @@ Class c_Jobs extends CI_Controller{
                             else
                                 {
 
-                                    $this->load->model('m_Jobs_process');
-                                    $response= $this->Order_process->insertJobsdata();
+                                    $this->load->model('Jobs_process');
+                                    $response= $this->Jobs_Process->insertJobsdata();
                                         if ($response){
                                             $this->session->set_flashdata('msg','Jobs Added Successfully . Please add the Job');
                                             redirect('Home/Jobs');
